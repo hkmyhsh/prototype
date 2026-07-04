@@ -1,0 +1,25 @@
+{
+  "task_id": "2026-07-04-ci-runner-wait-detection",
+  "goal": "GitHub Actions runner の待機時間を検知する仕組みを設計する",
+  "status": "in_progress",
+  "current_step": "validator_review",
+  "todo": [
+    "要件を整理する",
+    "既存監視方式を確認する",
+    "Lambda構成案を作る",
+    "レビュー観点を確認する"
+  ],
+  "done": [
+    "要件を整理する",
+    "既存監視方式を確認する"
+  ],
+  "decisions": [
+    {
+      "id": "D001",
+      "decision": "EventBridge Scheduler + Lambda で定期監視する",
+      "reason": "構成が単純で、既存AWS運用に乗せやすい"
+    }
+  ],
+  "next_action": "Lambda構成案を作成する",
+  "last_error": null
+}
